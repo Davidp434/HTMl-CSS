@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto de Extensão 2022O</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="image/logodavid.png" alt="logo" />
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#port">Projetos</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="indexform.html" target="_blank">Cadastre-se</a></li>
+        </ul>
+      </div>
+      <div class="menu-mobile">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#port">Projetos</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="indexform.html" target="_blank">Cadastre-se</a></li>
+        </ul>
+      </div>
+      <div class="btn-mobile">
+        <ion-icon name="grid-outline"></ion-icon>
+      </div>
+    </header>
+
+    <main id="home">
+      <div class="container">
+        <div class="icons">
+          <a
+            href="https://www.instagram.com/david.1dev/?hl=pt-br"
+            target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/david-silva-731b831a4/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a href="https://github.com/Davidp434" target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+        </div>
+        <div class="title">
+          <h1>
+            Ola, me chamo
+            <strong>
+              <br />
+              David Rodrigues</strong
+            >
+          </h1>
+          <h3>Estudante de Sistema de Informação</h3>
+          <h4> <a href="https://www.una.br/unidades/aimores/">Universidade Una Aimores - BH</a> </h4>
+        </div>
+      </div>
+    </main>
+
+    <section id="about">
+      <div class="container">
+        <div class="title">
+          <h1>Linguagens estudadas</h1>
+          <p><h2>Logo abaixo você minhas soft skills e projetos feitos para praticar minhas habilidades
+            <p><li>Pagina de login</li>
+              <li>E-commerce de NFTS</li>
+              <li>Pagina de Cadastro de uma comunidade</li></p>
+          </h2></p>
+          <div class="box-title">
+            <p>90%</p>
+            <div class="b1"><div class="b2"></div></div>
+            <span>HTML</span>
+
+            <p>80%</p>
+            <div class="b1"><div class="b3"></div></div>
+            <span>CSS</span>
+
+            <p>55%</p>
+            <div class="b1"><div class="b4"></div></div>
+            <span>JavaScript</span>
+
+            <p>40%</p>
+            <div class="b1"><div class="b5"></div></div>
+            <span>Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="port">
+      <div class="container">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        
+        <div class="cards">
+          
+          <label class="card" for="item-1" id="song-1">
+            <img src="image/onedev.png" alt="" />
+        
+            <button><a href="https://davidp434.github.io/PageLoginOneDev/" target="_blank" > Veja aqui</a></button>
+          </label>
+
+          <label class="card" for="item-2" id="song-2">
+            <img src="image/siteNFT.png" alt="" />
+            <button>
+              <a href="https://lnkd.in/emrF3aqJ" target="_blank">Veja aqui</a>
+            </button>
+          </label>
+
+          <label class="card" for="item-3" id="song-3">
+            <img src="image/devbot.png" alt="" />
+            <button><a href="">Veja aqui</a></button>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="content-contact">
+          <div class="contact-left">
+            <h1>Entre em Contato</h1>
+            <div class="linha"></div>
+            <ion-icon name="mail-outline"></ion-icon>
+            <span>davidrodrigues136@gmail.com</span>
+            <ion-icon name="call-outline"></ion-icon>
+            <span>+55 31 99886-0878</span>
+            <ion-icon name="location-outline"></ion-icon>
+            <span>Jaboticatubas,MG,Brasil</span>
+          </div>
+          <div class="contact-right">
+            <h1>Preencha o Formulário</h1>
+            <div class="linha"></div>
+            <input type="email" placeholder="E-mail" />
+            <input type="text" placeholder="Name" />
+            <textarea placeholder="Message"></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Copyright 2022 <a href="">Front</a> David Rodrigues da Silva</span>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.btn-mobile').click(function () {
+          $('.menu-mobile').slideToggle('slow')
+        })
+      })
+    </script>
+  </body>
+</html>
